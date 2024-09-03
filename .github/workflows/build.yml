@@ -65,19 +65,19 @@ jobs:
     needs: [linux,macos,windows]
     steps:
       - name: Download meshoptimizer linux
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: meshoptimizer-linux
           path: artifacts/linux
 
       - name: Download meshoptimizer osx
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: meshoptimizer-osx
           path: artifacts/osx
 
       - name: Download meshoptimizer windows
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: meshoptimizer-win
           path: artifacts/win
